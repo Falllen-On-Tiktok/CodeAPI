@@ -23,7 +23,7 @@ def generateCode():
     return jsonify({
         "code": f"{code}"
     })
-@app.route("ping")
+@app.route("/ping")
 def ping():
     return "Pinged!"
 
