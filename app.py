@@ -23,6 +23,9 @@ def generateCode():
     return jsonify({
         "code": f"{code}"
     })
+@app.route("ping")
+def ping():
+    return "Pinged!"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
